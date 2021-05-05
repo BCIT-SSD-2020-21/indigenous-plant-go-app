@@ -14,7 +14,7 @@ export default function WaypointDetail({ waypoint, locations }) {
        <YoutubePlayer height={270} videoId={videoId} />
       }
      
-      <Text>Hello</Text> 
+      <Text>Description: {waypoint.description}</Text> 
     </SafeAreaView>
   );
 }
