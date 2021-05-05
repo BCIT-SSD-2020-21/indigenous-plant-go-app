@@ -6,7 +6,7 @@ export default function WaypointDetail({ waypoint, locations }) {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <YoutubePlayer height={250} videoId={"49BCc6FJEK8"} />
+      <YoutubePlayer height={270} videoId={"49BCc6FJEK8"} />
     </SafeAreaView>
   );
 }
