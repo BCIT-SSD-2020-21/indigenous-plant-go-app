@@ -1,11 +1,30 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { 
+  StyleSheet, 
+  Text, 
+  View,  
+  FlatList,
+  TouchableOpacity, 
+} from "react-native";
 
-export default function ListWaypoints() {
+export default function ListWaypoints({waypoints, showDetail}) {
   return (
-    <View>
-      <Text>List Waypoints</Text>
-    </View>
+    <FlatList
+      style={styles.flatList}
+      keyExtractor={(waypoint) => waypoint._id}
+      data={waypoints}
+      renderItem={({ item }) => {
+        return (
+          <TouchableOpacity
+            onPress={() => {
+              showDetail(item);
+            }}
+          >
+            <Text>{item.waypoint_name}</Text>
+          </TouchableOpacity>
+        );
+      }}
+    />
   );
 }
 
