@@ -1,14 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native";
+import YoutubePlayer from "react-native-youtube-iframe";
+
 export default function WaypointDetail({ waypoint, locations }) {
 
-  
-  
   return (
-    <View>
-      <Text>Display : {waypoint.waypoint_name}</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <YoutubePlayer height={250} videoId={"49BCc6FJEK8"} />
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({});
+
