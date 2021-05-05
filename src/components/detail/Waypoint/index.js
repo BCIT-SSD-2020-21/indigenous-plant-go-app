@@ -1,12 +1,20 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 import YoutubePlayer from "react-native-youtube-iframe";
+import getYouTubeID from 'get-youtube-id';
 
 export default function WaypointDetail({ waypoint, locations }) {
 
+  const videoId = getYouTubeID(waypoint.videos[0].video_url)
+ 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <YoutubePlayer height={270} videoId={"49BCc6FJEK8"} />
+      <Text>{waypoint.waypoint_name}</Text>
+      { waypoint.videos[0].video_url && 
+       <YoutubePlayer height={270} videoId={videoId} />
+      }
+     
+      <Text>Hello</Text> 
     </SafeAreaView>
   );
 }
