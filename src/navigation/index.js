@@ -29,15 +29,15 @@ const ScreenStack = createStackNavigator();
 // Navigation Options
 const navOptions = {
   headerStyle: {
-    backgroundColor: "#f7f7f7",
+    backgroundColor: "#121212",
     elevation: 0,
-    shadowColor: "#cecece",
+    shadowColor: "#191919",
   },
-  headerTintColor: "#ccc",
+  headerTintColor: "#f7f7f7",
   headerTitleStyle: {
     fontWeight: "bold",
     textTransform: "uppercase",
-    color: "#333",
+    color: "white",
   },
 };
 
@@ -178,13 +178,13 @@ export default function Index() {
   return (
     <BottomTab.Navigator
       barStyle={{
-        backgroundColor: "#f7f7f7",
+        backgroundColor: "#121212",
         paddingBottom: 5,
         paddingTop: 5,
-        borderTopColor: "#ccc",
+        borderTopColor: "#333",
         borderWidth: 1,
       }}
-      activeColor="mediumseagreen"
+      activeColor="#B20C37"
     >
       <BottomTab.Screen
         name="Home"

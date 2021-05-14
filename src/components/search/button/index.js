@@ -32,15 +32,15 @@ export default function SearchButton({ navigation, resourceType }) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#eee",
+    backgroundColor: "#121212",
     paddingHorizontal: 10,
     paddingVertical: 10,
     borderBottomWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#191919",
   },
   button: {
     marginLeft: 10,
-    backgroundColor: "#f7f7f7",
+    backgroundColor: "#333",
     borderRadius: 20,
     paddingHorizontal: 10,
     paddingVertical: 5,

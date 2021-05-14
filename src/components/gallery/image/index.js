@@ -32,7 +32,9 @@ export default function GalleryImage({
           ) : null}
         </View>
       </View>
-      <Text style={{ maxWidth: 300, marginTop: 3 }}>{image.caption}</Text>
+      <Text style={{ maxWidth: 300, marginTop: 3, color: "white" }}>
+        {image.caption}
+      </Text>
     </View>
   );
 }

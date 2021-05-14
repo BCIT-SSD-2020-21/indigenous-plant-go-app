@@ -44,7 +44,7 @@ export default function PlantHead({
           <View style={styles.topicContainer}>
             {topics.map((topic, index) => (
               <View style={styles.topic} key={index}>
-                <Text>{topic}</Text>
+                <Text style={{ color: "white" }}>{topic}</Text>
               </View>
             ))}
           </View>
@@ -61,11 +61,11 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontWeight: "bold",
-    color: "#333",
+    color: "white",
     fontSize: 21,
   },
   subheading: {
-    color: "gray",
+    color: "lightgray",
   },
   topicContainer: {
     display: "flex",
@@ -73,13 +73,14 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   topic: {
-    backgroundColor: "#eee",
+    backgroundColor: "#222",
     marginRight: 5,
     marginBottom: 5,
     padding: 3,
+    color: "lightgray",
     paddingHorizontal: 7,
     borderWidth: 1,
-    borderColor: "lightgrey",
+    borderColor: "#333",
     borderRadius: 2,
   },
   imageContainer: {

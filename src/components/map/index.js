@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
   marker: {
     height: 20,
     width: 20,
-    backgroundColor: "dodgerblue",
+    backgroundColor: "#B20C37",
     borderRadius: 20 / 2,
     borderWidth: 3,
     borderColor: "white",
@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
   },
   calloutCTA: {
     textAlign: "center",
-    color: "#0862F9",
+    color: "#B20C37",
     marginLeft: 3,
   },
   locatorShadow: {

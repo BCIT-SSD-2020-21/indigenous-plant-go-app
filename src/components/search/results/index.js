@@ -33,7 +33,7 @@ export default function SearchResults({
 
 const styles = StyleSheet.create({
   results: {
-    backgroundColor: "#f7f7f7",
+    backgroundColor: "#121212",
     height: "100%",
     paddingBottom: 40,
     display: "flex",
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     width: `100%`,
     paddingRight: 20,
     paddingLeft: 20,
-    borderBottomColor: "lightgray",
+    borderBottomColor: "#333",
     borderBottomWidth: 1,
   },
   heading: {
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     fontSize: 21,
   },
   subheading: {
-    color: "#333",
+    color: "#f7f7f7",
     fontSize: 12,
     // marginTop: 7,
   },

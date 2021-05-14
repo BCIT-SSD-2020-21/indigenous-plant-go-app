@@ -18,7 +18,7 @@ export default function WaypointRelated({ resources, showDetail }) {
                       }
                 }
               >
-                <Text>{resource.plant_name}</Text>
+                <Text style={{ color: "white" }}>{resource.plant_name}</Text>
               </TouchableOpacity>
             </View>
           ))}
@@ -39,13 +39,14 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   topic: {
-    backgroundColor: "#eee",
+    backgroundColor: "#222",
     marginRight: 5,
     marginBottom: 5,
     padding: 3,
+    color: "lightgray",
     paddingHorizontal: 7,
     borderWidth: 1,
-    borderColor: "lightgrey",
+    borderColor: "#333",
     borderRadius: 2,
   },
   fieldTitle: {
@@ -53,5 +54,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 20,
     marginBottom: 4,
+    color: "white",
   },
 });

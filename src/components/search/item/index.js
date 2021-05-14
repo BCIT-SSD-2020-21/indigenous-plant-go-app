@@ -60,7 +60,7 @@ export default function SearchItem({
           <View style={styles.topicContainer}>
             {topics.map((topic, index) => (
               <View style={styles.topic} key={index}>
-                <Text>{topic}</Text>
+                <Text style={{ color: "lightgray" }}>{topic}</Text>
               </View>
             ))}
           </View>
@@ -74,16 +74,16 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 20,
     paddingVertical: 15,
-    borderBottomColor: "lightgrey",
+    borderBottomColor: "#333",
     borderBottomWidth: 1,
   },
   heading: {
     fontWeight: "bold",
-    color: "#333",
+    color: "white",
     fontSize: 21,
   },
   subheading: {
-    color: "gray",
+    color: "lightgray",
   },
   topicContainer: {
     display: "flex",
@@ -91,13 +91,14 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   topic: {
-    backgroundColor: "#eee",
+    backgroundColor: "#222",
     marginRight: 5,
     marginBottom: 5,
     padding: 3,
+    color: "lightgray",
     paddingHorizontal: 7,
     borderWidth: 1,
-    borderColor: "lightgrey",
+    borderColor: "#333",
     borderRadius: 2,
   },
   imageContainer: {
@@ -105,6 +106,9 @@ const styles = StyleSheet.create({
     height: 75,
     marginRight: 20,
     position: "relative",
+    borderWidth: 2,
+    borderColor: "#B20C37",
+    borderRadius: 75 / 2,
   },
   placeholder: {
     backgroundColor: "lightgray",

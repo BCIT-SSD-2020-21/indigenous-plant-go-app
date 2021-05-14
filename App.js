@@ -1,11 +1,12 @@
 import React from "react";
-import { StyleSheet, SafeAreaView } from "react-native";
+import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
 import Navigation from "./src/navigation";
 import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
   return (
     <NavigationContainer>
+      <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.container}>
         <Navigation />
       </SafeAreaView>
@@ -16,6 +17,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#121212",
   },
 });

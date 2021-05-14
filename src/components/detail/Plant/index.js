@@ -24,7 +24,7 @@ export default function PlantDetail({ plant, locations }) {
               style={{
                 width: "100%",
                 textAlign: "center",
-                color: "#333",
+                color: "white",
               }}
             >
               {locations.length} {plant.plant_name} located on campus.
@@ -50,12 +50,12 @@ const styles = StyleSheet.create({
   bodyWrap: {
     height: "100%",
     marginTop: -10,
-    backgroundColor: "dodgerblue",
+    backgroundColor: "#B20C37",
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
   },
   bodyContainer: {
-    backgroundColor: "white",
+    backgroundColor: "#191919",
     height: "100%",
     marginTop: 5,
     borderTopLeftRadius: 20,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   bannerContainer: {
-    backgroundColor: "white",
+    backgroundColor: "#191919",
     paddingVertical: 7,
     borderRadius: 3,
     borderWidth: 1,

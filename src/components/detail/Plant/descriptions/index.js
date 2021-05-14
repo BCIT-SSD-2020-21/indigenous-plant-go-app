@@ -24,11 +24,13 @@ const styles = StyleSheet.create({
   },
   fieldTitle: {
     fontWeight: "bold",
+    color: "white",
     fontSize: 16,
     marginTop: 20,
     marginBottom: 4,
   },
   fieldBody: {
     lineHeight: 20,
+    color: "lightgray",
   },
 });

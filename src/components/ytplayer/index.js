@@ -9,7 +9,7 @@ export default function YTPlayer({ youtubeId, video }) {
         {video.caption} (Video)
       </Text>
       <YoutubePlayer
-        height={210}
+        height={220}
         style={{
           paddingBottom: 0,
           marginBottom: 0,
@@ -33,5 +33,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 20,
     marginBottom: 4,
+    color: "white",
   },
 });
